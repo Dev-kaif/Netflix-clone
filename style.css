@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-image: url('assets/images/netflix back image.jpg');
+    height: 80vh;
+    background-size:cover;
+}
+
+main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+}
