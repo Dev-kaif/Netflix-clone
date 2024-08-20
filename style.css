@@ -13,19 +13,20 @@ body {
     background-repeat: no-repeat;
     height: 80vh;
     position: relative;
+
 }
 
 .main .box {
     height: 80vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.5;
     background-color: black;
     top: 0;
     position: absolute;
 }
 
 nav {
-    max-width: 80vw;
+    max-width: 76vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -33,6 +34,32 @@ nav {
     height: 62px;
 }
 .logo img{
-    width: 100px;
+    width: 145px;
+    position: absolute;
+    z-index: 100;
 }
 
+nav div button:nth-child(1) {
+    background-color: transparent;
+    font-size: 13px;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+nav div button:nth-child(2) {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    font-size: 14px;
+    font-weight: 400;
+}
