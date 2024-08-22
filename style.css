@@ -1,9 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 body {
-  font-family: sans-serif;
   background-color: black;
 }
 .main {
@@ -40,7 +40,6 @@ nav {
   margin-left: -2px;
   position: absolute;
   z-index: 100;
-  display: block;
 }
 
 
@@ -69,6 +68,7 @@ nav button:nth-child(2) {
   font-size: 14px;
   font-weight: 550;
   margin: 50px 20px 0px 30px;
+  z-index: 100;
 }
 
 .big {
@@ -90,18 +90,21 @@ nav button:nth-child(2) {
   font-weight: 900;
   margin-bottom: 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .big div:nth-child(2) {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 28px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  text-align: center;
 }
 
 .big div:nth-child(3) {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .big div:nth-child(4) {
@@ -109,6 +112,7 @@ nav button:nth-child(2) {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .big div:nth-child(4) button {
@@ -121,11 +125,13 @@ nav button:nth-child(2) {
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
+  text-align: center;
 }
 
 .big div:nth-child(4) button:hover {
   background-color: #c9050f;
   color: white;
+  text-align: center;
 }
 
 .big div:nth-child(4) input {
@@ -152,5 +158,191 @@ nav button:nth-child(2) {
 .separator {
     height: 8px;
     background-color: rgb(56, 56, 56);
-    margin-top: 15px;
+    position: relative;
+    z-index: 20;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+  font-size: 24px;
+
+}
+
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  nav{
+      max-width: 90vw;
+  }
+
+  .first {
+      flex-wrap: wrap;
+  }
+
+  .secImg img {
+      width: 305px;
+  }
+
+  .secImg video {
+      width: 305px;
+  }
+
+  .hero> :nth-child(1) {
+      font-size: 32px;
+  }
+
+  .hero> :nth-child(2) {
+      font-size: 18px;
+  }
+
+  .hero> :nth-child(3) {
+      font-size: 18px;
+  }
+
+  .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+  }
+
+  .faq h2 {
+      text-align: center;
+      font-size: 32px;
+  }
+
+  footer {
+      max-width: 90vw;
+      padding: 75px 0;
+  }
+
+  .footer-item{
+      align-items: center;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+}
+
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
